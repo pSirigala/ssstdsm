@@ -1,0 +1,7 @@
+{
+  "name": "ssstdsm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
