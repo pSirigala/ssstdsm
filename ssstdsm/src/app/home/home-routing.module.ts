@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 
+
 const routes: Routes = [
   {
     path: '',
@@ -16,56 +17,56 @@ const routes: Routes = [
           )
       },
       {
-        path:'',
+        path:'home/updates',
         loadChildren:() => 
           import('../pages/updates/updates.module').then(
             m => m.UpdatesPageModule
           )
       },
       {
-        path:'',
+        path:'home/timings',
         loadChildren:() => 
           import('../pages/timings/timings.module').then(
             m => m.TimingsPageModule
           )
       },
       {
-        path:'mission',
+        path:'home/mission',
         loadChildren:() => 
           import('../pages/mission/mission.module').then(
             m => m.MissionPageModule
           )
       },
       {
-        path:'',
+        path:'home/history',
         loadChildren:() => 
           import('../pages/history/history.module').then(
             m => m.HistoryPageModule
           )
       },
       {
-        path:'',
+        path:'home/festivals',
         loadChildren:() => 
           import('../pages/festivals/festivals.module').then(
             m => m.FestivalsPageModule
           )
       },
       {
-        path:'',
+        path:'home/donations',
         loadChildren:() => 
           import('../pages/donations/donations.module').then(
             m => m.DonationsPageModule
           )
       },
       {
-        path:'',
+        path:'home/contactus',
         loadChildren:() => 
           import('../pages/contactus/contactus.module').then(
             m => m.ContactusPageModule
           )
       },
       {
-        path:'',
+        path:'home/stories',
         loadChildren:() => 
           import('../pages/stories/stories.module').then(
             m => m.StoriesPageModule

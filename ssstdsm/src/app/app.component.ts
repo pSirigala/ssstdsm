@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
     {
       title: 'ContactUs',
       url: '/home/contactus',
-      icon: 'warning'
+      icon: 'call'
     }
 
   ];

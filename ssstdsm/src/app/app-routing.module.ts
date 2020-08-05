@@ -7,7 +7,7 @@ import { HomePageRoutingModule } from './home/home-routing.module';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./home/home.module').then(m=>m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then(m=>m.HomePageModule)    
   }
 ];
 
