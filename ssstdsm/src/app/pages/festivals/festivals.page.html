@@ -4,6 +4,13 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding> 
+  <ion-list>
+    <ion-item-sliding *ngFor="let item if events" padding>
+        <ion-item lines="inset">
+          <ion-label>{{item.name}}</ion-label>
+          <ion-note>{{item.description}}</ion-note>
+        </ion-item>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
