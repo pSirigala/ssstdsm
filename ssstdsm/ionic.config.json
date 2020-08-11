@@ -1,7 +1,8 @@
 {
   "name": "ssstdsm",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
