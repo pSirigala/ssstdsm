@@ -72,7 +72,6 @@ const routes: Routes = [
             m => m.StoriesPageModule
           )
       }
-
     ]
   }
 ];

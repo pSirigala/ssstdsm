@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SlidesService, slide } from './../../services/slides.service';
 
 @Component({
   selector: 'app-updates',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdatesPage implements OnInit {
 
-  constructor() { }
+  updateSlides: slide[];
+  constructor(private slidesService: SlidesService) { }
 
   ngOnInit() {
+    this.slidesService.getSlidesByType('templeConstruction').subscribe(res => {      
+      this.updateSlides = res;
+    });
+
   }
 
 }

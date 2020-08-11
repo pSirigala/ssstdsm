@@ -11,7 +11,7 @@ export class FestivalsPage implements OnInit {
 
   constructor(private eventService: EventsService) { }
 
-  ngOnInit() {
+  ngOnInit() {    
     this.eventService.getEvents().subscribe(res => {
       this.events = res;
     });

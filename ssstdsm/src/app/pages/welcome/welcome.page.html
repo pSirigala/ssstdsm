@@ -1,43 +1,36 @@
 <ion-header>
   <ion-toolbar style="text-align: center;">
     <ion-title>Shri Shirdi Saibaba Temple of Des Moines (SSST)</ion-title>
-    <ion-notes>
+    <ion-note>
       (Non profit organization TAX ID:47-5157728)
 P.O.Box # 71128, 2135 NW 108th St , Clive IA, 50325
 FOR DONATIONS: Send checks in favor of "SSST" to PO Box address
-    </ion-notes>
+    </ion-note>
   </ion-toolbar>
 </ion-header>
 <br/>
-<ion-content padding>
-  <ion-slides pager style="height: 30em;">
-
-    <ion-slide class="slideImgBackgroung" style="background-image: url(assets/images/homeSlides/mainpagebaba.jpg);">
-      <h2>On Sai Ram</h2>
+<ion-content class="ion-padding">
+  <ion-slides >    
+    <ion-slide *ngFor="let s of slides" >
+      <div class="slide">
+        <img src="{{s.src}}"/>
+        <h2>{{s.title}}</h2>
+        <h3>{{s.subTitle}}</h3>
+        <p>{{s.description}}</p>
+      </div>
     </ion-slide>
-  
-    <ion-slide class="slideImgBackgroung" style="background-image: url(assets/images/homeSlides/mybaba12.jpg);">
-      <h2>On Sai Ram</h2>
-    </ion-slide>
-  
   </ion-slides>
-</ion-content>
+
 
 <div class="row">
   <div >
     <p>
         <strong>
-            <font face="Arial" color="#0000FF"><small>Objectives of Shirdi Sai Des Moines Trust</small></font><font color="#0000A0" face="Arial">
-                <big>
-                    <big>
-                        <br>
-                    </big>
-                </big>
-            </font>
+            <h3 style="color: #0000FF;">Objectives of Shirdi Sai Des Moines Trust</h3>
         </strong>
-        <font face="Arial" color="black">
-            <small>
-               </small></font></p><p><font face="Arial" color="black"><small>Shri Shirdi Saibaba Temple of Des Moines (SSST) is engaged in spreading the Sai movement</small></font></p><font face="Arial" color="black"><small> 
+    </p>
+    <h4>Shri Shirdi Saibaba Temple of Des Moines (SSST) is engaged in spreading the Sai movement</h4>
+    
 
                 The main activities of the Trust are as follows:
                 <ul>
@@ -45,8 +38,7 @@ FOR DONATIONS: Send checks in favor of "SSST" to PO Box address
                     <li>Assisting in the building of Sai Mandirs.</li>
                     <li>Services rendered since inception.</li>
                 </ul>                                                       
-            </small>
-        </font>
-    <p></p>               
+    
+  </div>
 </div>
-</div>
+</ion-content>

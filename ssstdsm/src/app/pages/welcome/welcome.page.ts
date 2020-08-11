@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SlidesService, slide } from './../../services/slides.service';
 
 @Component({
   selector: 'app-welcome',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomePage implements OnInit {
 
-  constructor() { }
+  slides: slide[];
+  constructor(private slidesService: SlidesService) { }
 
   ngOnInit() {
+    this.slidesService.getSlidesByType('home').subscribe(res => {
+      this.slides = res;
+    });
   }
 
 }

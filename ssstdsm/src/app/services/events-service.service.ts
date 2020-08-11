@@ -8,7 +8,8 @@ import { map } from 'rxjs/operators';
 export interface event{
   name: string,
   description:string,
-  address:string,  
+  address:string, 
+  subTitle:string, 
   active: boolean
 }
 
