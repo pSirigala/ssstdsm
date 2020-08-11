@@ -20,7 +20,7 @@ export class EventsService {
   private events: Observable<event[]>;
 
   constructor(db:AngularFirestore) { 
-    this.eventsCollections = db.collection<event>('events');
+   this.eventsCollections = db.collection<event>('events');
 
     this.events = this.eventsCollections.snapshotChanges().pipe(
       map(actions => {

@@ -11,7 +11,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomePageModule } from './home/home.module';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule, AngularFirestore } from 'angularfire2/firestore';
-import { AngularFireStorage } from '@angular/fire/storage'
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -23,8 +22,7 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     HomePageModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
-    AngularFirestore
+    AngularFirestoreModule
   ],
   providers: [
     StatusBar,
