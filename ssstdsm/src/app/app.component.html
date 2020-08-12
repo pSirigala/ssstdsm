@@ -1,11 +1,14 @@
 <ion-app>  
   <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
-        <ion-list id="inbox-list">
-          <ion-list-header>Om Sai Ram</ion-list-header>
-          <ion-note>SSST</ion-note>
+    <ion-menu contentId="main-content"  style="background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);">
+      <ion-content style="background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%) !important;">
 
+        <ion-list id="inbox-list">                               
+          <div class="row" style="text-align: center;">
+            <img src="https://firebasestorage.googleapis.com/v0/b/ssstdsm-f68e3.appspot.com/o/images%2FSaibaba_Profile.png?alt=media&token=23164ad1-f3c9-48ed-83fa-e2df3699f120" style="width: 30%;height: auto;">                        
+          </div>
+          <ion-list-header style="text-align: center;">Shri Shirdi Saibaba Temple, DSM</ion-list-header>          
+                    
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>

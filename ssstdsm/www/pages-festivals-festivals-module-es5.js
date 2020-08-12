@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar>\n    <ion-title>Festivals</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding> \n  <div class=\"row\">\n    <ion-card *ngFor=\"let e of events; let i=index\">\n      <ion-card-header>\n        <ion-card-title>{{e.name}}</ion-card-title>\n        <ion-card-subtitle>{{e.subTitle}}</ion-card-subtitle>        \n      </ion-card-header>\n    \n      <ion-card-content>\n        <div [innerHTML]=\"e.description\"></div>\n        <br/>\n        <div><strong>Address:</strong>{{e.address}}</div>\n      </ion-card-content>\n    </ion-card>\n  </div>\n</ion-content>\n";
+    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar>\n    <ion-title>Festivals</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content > \n  <div class=\"row\">\n    <ion-card *ngFor=\"let e of events; let i=index\">\n      <ion-card-header>\n        <ion-card-title>{{e.name}}</ion-card-title>\n        <ion-card-subtitle>{{e.subTitle}}</ion-card-subtitle>        \n      </ion-card-header>\n    \n      <ion-card-content>\n        <div [innerHTML]=\"e.description\"></div>\n        <br/>\n        <div><strong>Address:</strong>{{e.address}}</div>\n      </ion-card-content>\n    </ion-card>\n  </div>\n</ion-content>\n";
     /***/
   },
 
